@@ -4,6 +4,7 @@ import search from './assets/icons/search.svg'
 import { useStateContext } from './Context'
 import {BackgroundLayout} from './components'
 
+
 function App() {
   
   const[input,setInput] = useState('')
@@ -25,6 +26,9 @@ function App() {
                 </div>
              </nav>
              <BackgroundLayout></BackgroundLayout>
+             <main className='w-full flex flex-wrap gap-8 py-4 px-[10%] items-center'>
+ 
+             </main>
       </div>
     </>
   )
