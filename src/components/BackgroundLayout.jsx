@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from 'react'
 import { useStateContext } from '../Context'
 
@@ -23,7 +24,7 @@ const BackgroundLayout = () => {
         setImage(Clear)
       }else if(imageString.toLowerCase().includes('cloud')){
         setImage(Cloudy)
-      }else if(imageString.toLowerCase().includes('rain') || imageString.toLowerCase.includes('shower')){
+      }else if(imageString.toLowerCase().includes('rain') || imageString.toLowerCase().includes('shower')){
         setImage(Rainy)
       }else if(imageString.toLowerCase().includes('snow')){
         setImage(Snow)
@@ -31,7 +32,7 @@ const BackgroundLayout = () => {
         setImage(Fog)
       }else if(imageString.toLowerCase().includes('cloud')){
         setImage(Cloudy)
-      }else if(imageString.toLowerCase().includes('thunder') || imageString.toLowerCase.includes('storm')){
+      }else if(imageString.toLowerCase().includes('thunder') || imageString.toLowerCase().includes('storm')){
         setImage(Stormy)
       }
     }
@@ -43,4 +44,4 @@ const BackgroundLayout = () => {
 }
 
 export default BackgroundLayout
- 
+/* eslint-enable */

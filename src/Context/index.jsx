@@ -7,7 +7,7 @@ export const StateContextProvider = ({ children }) => {
     const [weather, setWeather] = useState({});
     const [values, setValues] = useState([]);
     const [place, setPlace] = useState('Mumbai');
-    const [location, setLocation] = useState('');
+    const [thisLocation, setLocation] = useState('');
 
 // //   //fetch api
   const fetchWeather = async() =>{
@@ -57,7 +57,7 @@ try {
   }, [values]);
 
   return (
-    <StateContext.Provider value={{ weather, values, setPlace, location }}>
+    <StateContext.Provider value={{ weather, values, setPlace, thisLocation, place }}>
       {children}
     </StateContext.Provider>
   );
